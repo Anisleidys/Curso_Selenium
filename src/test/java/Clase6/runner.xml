@@ -1,0 +1,27 @@
+<suite name=" Practico testing">
+
+    <test name="Ejercicios testng">
+        <parameter name="tagname" value="a"></parameter>
+        <parameter name="username" value="selenium"></parameter>
+        <parameter name="password" value="testing1234"></parameter>
+
+        <groups>
+            <run>
+                <include name="login"></include>
+                <include name="compras"></include>
+
+            </run>
+        </groups>
+
+
+
+        <classes>
+            <class "></class>
+
+
+
+    </classes>
+
+</test>
+
+        </suite>
