@@ -70,8 +70,12 @@ public class Juego {
 
     public static String juegaUsuario() {
         Scanner input = new Scanner( System.in);
-        System.out.println("Ingrese P (Piedra), L (Papel), T (Tijera)");
+        System.out.println("Ingrese P (Piedra), L (Papel), T (Tijera), S (Salir)");
         String jugada = input.next();
+        if(jugada.equals("S")){
+            despedida();
+            System.exit(0);
+        }
         System.out.println("Jugaste: " + jugada);
         return jugada;
     }
